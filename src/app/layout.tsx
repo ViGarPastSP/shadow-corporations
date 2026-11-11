@@ -3,8 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "ShadowCorps",
-  description: "Poder, traición y control. Espionaje, corporaciones y mapa mundial.",
+  description: "Espionaje, corporaciones y control territorial.",
   metadataBase: new URL("https://shadowcorp.pro"),
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

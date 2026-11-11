@@ -6,28 +6,36 @@
 
 :root {
   color-scheme: dark;
+  --bg: #0b0f14;
+  --panel: #12171e;
+  --panel2: #1a212b;
+  --border: #243041;
+  --text: #e8eef6;
+  --muted: #8b9bb0;
+  --accent: #c41e3a;
+  --accent-hover: #a01830;
 }
 
-html, body {
+html, body, #__next {
   height: 100%;
+  width: 100%;
+  margin: 0;
   overflow: hidden;
-  background-color: #0a0a0b;
-  color: #fafafa;
+  background: var(--bg);
+  color: var(--text);
   font-family: 'Inter', system-ui, sans-serif;
 }
 
-/* Hide ALL scrollbars everywhere (still scrollable if needed) */
 * {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 *::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none;
   width: 0;
   height: 0;
 }
 
-/* Utility: allow internal scroll without visible bar */
 .scroll-hidden {
   overflow: auto;
   scrollbar-width: none;
@@ -35,4 +43,50 @@ html, body {
 }
 .scroll-hidden::-webkit-scrollbar {
   display: none;
+}
+
+/* Game shell layout like Warera */
+.game-shell {
+  height: 100dvh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 48px 1fr 72px;
+  overflow: hidden;
+}
+
+.game-top {
+  background: rgba(12, 16, 22, 0.95);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  z-index: 40;
+}
+
+.game-bottom {
+  background: rgba(12, 16, 22, 0.97);
+  border-top: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  z-index: 40;
+}
+
+.game-main {
+  position: relative;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.stat-pill strong {
+  color: var(--text);
+  font-weight: 600;
 }
