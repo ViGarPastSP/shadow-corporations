@@ -13,6 +13,9 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED=1
+# Placeholder env so build/prerender does not crash; real values come at runtime
+ENV NEXT_PUBLIC_SUPABASE_URL=https://nktksctoypaivogpovkq.supabase.co
+ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5rdGtzY3RveXBhaXZvZ3BvdmtxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQzOTI1MDIsImV4cCI6MjEwOTk2ODUwMn0.c9xKTD9yEAQ_oEHiXxjhR_98qQOXAH-KVn69w0WibJo
 
 RUN npm run build
 
