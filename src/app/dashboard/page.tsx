@@ -17,14 +17,14 @@ export default function DashboardPage() {
               <Link href="/dashboard" className="px-3 py-1.5 rounded-md bg-surface2 text-white">
                 Dashboard
               </Link>
+              <Link href="/map" className="px-3 py-1.5 rounded-md text-muted hover:text-white transition">
+                Mapa Mundial
+              </Link>
               <Link href="#" className="px-3 py-1.5 rounded-md text-muted hover:text-white transition">
                 Corporación
               </Link>
               <Link href="#" className="px-3 py-1.5 rounded-md text-muted hover:text-white transition">
                 Operaciones
-              </Link>
-              <Link href="#" className="px-3 py-1.5 rounded-md text-muted hover:text-white transition">
-                Ciudad
               </Link>
               <Link href="#" className="px-3 py-1.5 rounded-md text-muted hover:text-white transition">
                 Rankings
@@ -116,6 +116,12 @@ export default function DashboardPage() {
                   <span>$2.4M</span>
                 </div>
               </div>
+              <Link
+                href="/map"
+                className="mt-4 block text-center text-sm text-primary hover:underline"
+              >
+                Ver mapa mundial →
+              </Link>
             </section>
 
             <section className="bg-surface border border-border rounded-xl p-5">
