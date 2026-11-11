@@ -8,24 +8,31 @@
   color-scheme: dark;
 }
 
-body {
+html, body {
+  height: 100%;
+  overflow: hidden;
   background-color: #0a0a0b;
   color: #fafafa;
   font-family: 'Inter', system-ui, sans-serif;
 }
 
-/* Scrollbar oscuro */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+/* Hide ALL scrollbars everywhere (still scrollable if needed) */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
 }
-::-webkit-scrollbar-track {
-  background: #121214;
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+  width: 0;
+  height: 0;
 }
-::-webkit-scrollbar-thumb {
-  background: #3f3f46;
-  border-radius: 4px;
+
+/* Utility: allow internal scroll without visible bar */
+.scroll-hidden {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #52525b;
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
 }
