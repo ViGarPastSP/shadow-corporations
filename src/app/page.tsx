@@ -6,11 +6,11 @@ export default function HomePage() {
       {/* Header */}
       <header className="border-b border-border bg-surface/80 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-7 h-7 bg-primary rounded flex items-center justify-center text-sm font-bold">
-              SC
+          <div className="flex items-center gap-2.5">
+            <div className="w-8 h-8 bg-primary/20 border border-primary/40 rounded-lg flex items-center justify-center overflow-hidden">
+              <span className="text-primary font-bold text-sm tracking-tighter">SC</span>
             </div>
-            <span className="font-semibold tracking-tight">Shadow Corporations</span>
+            <span className="font-semibold tracking-tight text-[15px]">ShadowCorps</span>
           </div>
           <nav className="flex items-center gap-4">
             <Link
@@ -86,7 +86,7 @@ export default function HomePage() {
       </section>
 
       <footer className="border-t border-border py-6 text-center text-sm text-muted">
-        © 2026 Shadow Corporations · shadowcorp.pro
+        © 2026 ShadowCorps · shadowcorp.pro
       </footer>
     </main>
   );

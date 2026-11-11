@@ -5,11 +5,11 @@ export default function LoginPage() {
     <main className="min-h-screen flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <Link href="/" className="inline-flex items-center gap-2 mb-6">
-            <div className="w-8 h-8 bg-primary rounded flex items-center justify-center text-sm font-bold">
-              SC
+          <Link href="/" className="inline-flex items-center gap-2.5 mb-6">
+            <div className="w-8 h-8 bg-primary/20 border border-primary/40 rounded-lg flex items-center justify-center">
+              <span className="text-primary font-bold text-sm tracking-tighter">SC</span>
             </div>
-            <span className="font-semibold text-lg">Shadow Corporations</span>
+            <span className="font-semibold text-lg tracking-tight">ShadowCorps</span>
           </Link>
           <h1 className="text-2xl font-bold">Entrar</h1>
           <p className="text-muted text-sm mt-1">Accede a tu cuenta</p>

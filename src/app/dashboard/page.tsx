@@ -7,11 +7,11 @@ export default function DashboardPage() {
       <header className="border-b border-border bg-surface">
         <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
           <div className="flex items-center gap-6">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-7 h-7 bg-primary rounded flex items-center justify-center text-sm font-bold">
-                SC
+            <Link href="/" className="flex items-center gap-2.5">
+              <div className="w-8 h-8 bg-primary/20 border border-primary/40 rounded-lg flex items-center justify-center">
+                <span className="text-primary font-bold text-sm tracking-tighter">SC</span>
               </div>
-              <span className="font-semibold hidden sm:inline">Shadow Corporations</span>
+              <span className="font-semibold hidden sm:inline tracking-tight">ShadowCorps</span>
             </Link>
             <nav className="hidden md:flex items-center gap-1 text-sm">
               <Link href="/dashboard" className="px-3 py-1.5 rounded-md bg-surface2 text-white">

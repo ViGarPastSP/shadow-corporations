@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Shadow Corporations",
+  title: "ShadowCorps",
   description: "Poder, traición y control corporativo. El juego de estrategia multiplayer donde las corporaciones controlan el mundo.",
   metadataBase: new URL("https://shadowcorp.pro"),
 };
