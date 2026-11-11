@@ -14,7 +14,11 @@ export default function MapPage() {
   const countryBattles = selectedCountry
     ? MOCK_BATTLES.filter((b) => b.location.startsWith(selectedCountry))
     : [];
-  const battleIds = [...new Set(MOCK_BATTLES.filter((b) => b.status === "active").map((b) => b.location.split("-")[0]))];
+  const battleIds = Array.from(
+    new Set(
+      MOCK_BATTLES.filter((b) => b.status === "active").map((b) => b.location.split("-")[0])
+    )
+  );
 
   return (
     <div className="h-screen flex flex-col overflow-hidden bg-background">
@@ -47,7 +51,6 @@ export default function MapPage() {
           battleCountryIds={battleIds}
         />
 
-        {/* Detail panel */}
         {selected && (
           <div className="absolute bottom-0 left-0 right-0 border-t border-border bg-surface/95 backdrop-blur-md p-4 max-h-[38vh] overflow-auto scroll-hidden z-10">
             <div className="max-w-5xl mx-auto flex flex-wrap gap-5">
