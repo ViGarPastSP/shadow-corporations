@@ -11,15 +11,20 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
     "clsx": "^2.1.1",
+    "d3-geo": "^3.1.1",
     "lucide-react": "^0.460.0",
     "next": "14.2.18",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "topojson-client": "^3.1.0"
   },
   "devDependencies": {
+    "@types/d3-geo": "^3.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/topojson-client": "^3.1.5",
+    "@types/topojson-specification": "^1.0.5",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.18",
